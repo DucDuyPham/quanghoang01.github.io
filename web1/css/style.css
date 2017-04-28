@@ -1,0 +1,9 @@
+a{text-decoration: none;color:grey;}
+a:visited{color:grey;}
+a:hover{color:blue;}
+
+img{max-width: 300px;}
+.active{font-weight: bold;}
+
+b::after{content: " VND";}
+a{}
