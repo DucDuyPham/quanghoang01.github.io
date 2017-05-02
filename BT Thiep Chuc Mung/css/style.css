@@ -1,0 +1,87 @@
+body{
+	width: 900px;
+	background-color:darkseagreen;
+}
+
+.snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+.content{
+	max-width:900px;
+	margin:0 auto;
+	position: relative;
+}
+.content img{
+	max-width: 100%;
+}
+
+.content h1{
+	position: absolute;
+	top:10px;
+	text-align: center;
+	text-transform: uppercase;
+	animation: text 10s linear infinite;
+}
+
+.santa img{
+	max-width: 40%;
+}
+
+.santa{
+	position: absolute;
+    top: 140px;
+	animation: santa 5s linear infinite;
+}
+
+.gift img{position: absolute;
+    top: 145px;
+    right: 11px;
+    max-width: 20%;}
+
+@keyframes santa{
+	0%  {opacity: 0;transform: translate(0px,0);}
+	25%  {opacity: 0.25;transform: translate(100px,0);}
+	50%  {opacity: 0.5;transform: translate(200px,0);}
+	75%  {opacity: 0.75;transform: translate(300px,0);}
+	100% {opacity: 0;transform: translate(450px,0);}
+}
+
+@keyframes text {
+	0%  {background-color: #BBFFFF; color: #F9E559;opacity: 0.2}
+    25%  {background-color: #6F3662; color: #FFFFFF;opacity: 0.4}
+    50%  {background-color: #9F6164; color: #F8DEBD;opacity: 0.6}
+    75%  {background-color: #44B3C2; color: #FFFFFF;opacity: 0.8}
+    100% {background-color: #218C8D; color: #F9E559;opacity: 1
