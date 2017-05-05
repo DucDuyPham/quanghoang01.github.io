@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    
+</head>
+<body>
+<p id = "p1">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati doloribus, maxime, illo est, tenetur, quia animi incidunt molestiae ab non cupiditate alias laborum tempora vero! Laudantium nobis recusandae nesciunt ea.</p>
+<p id="p2">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati doloribus, maxime, illo est, tenetur, quia animi incidunt molestiae ab non cupiditate alias laborum tempora vero! Laudantium nobis recusandae nesciunt ea.</p>
+<p id="p3">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati doloribus, maxime, illo est, tenetur, quia animi incidunt molestiae ab non cupiditate alias laborum tempora vero! Laudantium nobis recusandae nesciunt ea.</p>
+
+<script>
+    function changeFontSize(x){
+        var a = document.getElementsByTagName("P");
+        for (var i = 0; i < a.length; i++) {
+        a[i].style.fontSize = x;
+    }
+}
+
+    function increaseFontSize(x){
+        var a = document.getElementsByTagName("P");
+        var y = parseInt(a[x-1].style.fontSize);
+        if (y>30){
+            a[x-1].style.fontSize = 30;
+        }
+        else{a[x-1].style.fontSize = y+1;}
+    }
+
+    function decreaseFontSize(x){
+    var a = document.getElementsByTagName("P");
+    var y = parseInt(a[x-1].style.fontSize);
+    if (y<10){
+        a[x-1].style.fontSize = 10;
+    }
+    else{a[x-1].style.fontSize = y-1;}
+
+}
+
+        function changeColor(){
+        p1.style.color = "green";
+        p2.style.color = "yellow";
+        p3.style.color = "red" 
+        }
+
+    function changeBgColor(color){
+        document.body.style.background = color;
+    }
+
+    function copyContent(para1, para2){
+        var a = document.getElementsByTagName("p");
+        a[para1-1].innerHTML = a[para2-1].innerHTML;
+
+    }
+</script>
+</body>
+</html>
