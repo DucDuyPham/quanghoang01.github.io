@@ -50,11 +50,8 @@ button:hover {
 .answer div {
 	display: block;
 	background-color: #BADDBC;
-	margin: 7px;
-	width:150px;
-	float:left;
+	margin: 14px 7px;
 	position: relative;
-    left: 15px;
 	padding: 0 10px;
 	line-height: 36px;
 	cursor: pointer;
