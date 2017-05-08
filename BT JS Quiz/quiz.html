@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+
+	<div id="wrap">
+	<h1>Quiz</h1>
+		<div class="quiz">
+			<div class="question">
+				<div id="ques">Iphone do hãng nào sản xuất?</div>
+			</div>
+			<div class="answer">
+				<div id="ans1" onclick="changeColor(this)">Samsung</div>
+				<div id="ans2" onclick="changeColor(this)">Apple</div>
+				<div id="ans3" onclick="changeColor(this)">HTC</div>
+				<div id="ans4" onclick="changeColor(this)">LG</div>
+			</div>
+		</div>
+		<button id="button-next" onclick="nextQuestion()">Next</button>	
+	</div>
+	<script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
