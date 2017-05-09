@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrap {
+	margin: auto;
+	max-width: 800px;
+}
+.card {
+	max-width: 20%;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.card img {
+	max-width: 92%;
+	margin:7px;
+	border:1px solid black;
+}
+
+.card .front {
+	position: absolute;
+	top:0px;
+	left:0px;
+	transform: rotateY(180deg);
+}
+.card .front, .card .back {
+	transition: all 0.5s;
+	backface-visibility: hidden;
+}
+.card .back:hover {
+	box-shadow: 0px 0px 15px 5px #142d3a;
+}
+.card.flipped .front{
+	transform: rotateY(0deg);
+}
+.card.flipped .back {
+	transform: rotateY(180deg);
+}
