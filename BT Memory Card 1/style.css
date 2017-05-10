@@ -1,7 +1,9 @@
 * {
 	box-sizing: border-box;
 }
-
+body{
+	background-color: #142d3a;
+}
 .wrap {
 	margin: auto;
 	max-width: 800px;
@@ -31,9 +33,12 @@
 .card .back:hover {
 	box-shadow: 0px 0px 15px 5px #142d3a;
 }
-.card.flipped .front{
-	transform: rotateY(0deg);
-}
+
 .card.flipped .back {
 	transform: rotateY(180deg);
 }
+
+.card.flipped .front{
+	transform: rotateY(0deg);
+}
+
