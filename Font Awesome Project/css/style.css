@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+html{
+	font-family: 'Maven Pro', sans-serif;
+}
+body{
+	margin:0 auto;
+	width:900px;
+}
+
+.banner img{
+	max-width: 100%;
+}
+.menu{
+	position: absolute;
+	z-index:99;
+	font-size: 17px;
+}
+
+ul {
+ background: #8AD385;
+ width: 200px;
+ padding: 0;
+ list-style-type: none;
+ text-align: left;
+}
+
+ul li {
+ width: auto;
+ height: 40px;
+ line-height: 40px;
+ border-bottom: 1px solid #e8e8e8;
+ padding: 0 8px;
+ position: relative;
+}
+ul li a {
+ text-decoration: none;
+ color: #333;
+ font-weight: bold;
+ display: block;
+}
+ul li:hover {
+ background: #CDE2CD;
+}
+
+.submenu {
+ position: absolute;
+ left: 200px;
+ top: 0;
+ display: none;
+}
+
+li:hover .submenu {
+ display: block;
+}
+.discount{
+    overflow: auto;
+}
+
+.discount img{
+	padding-top: 21px;
+    max-width: 76%;
+    float: right;
+    margin: 0 auto;
+}
+
+h1{
+	font-size: 25px;
+}
+.main-content img{
+	width: 25%;
+    vertical-align: top;}
+
+.main-content{position:relative;
+			  left: 134px;
+			  margin-top:10px;
+			  left: 216px;
+    		  top: 11px;}	
+.danhsach{
+	position:relative;
+			  left: 134px;
+			  margin-top:10px;
+			  left: 216px;
+    		  top: 11px;
+}
+.danhsach img{
+	width: 15%;
+	display: block;
+    vertical-align: top;
+}
+
+.mieuta{
+	margin: -4px 10px 0 0;
+    left: 154px;
+    top: -132px;
+    position: relative;
+    width: 525px;
+    text-align: justify;
+}
