@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+.wrap{
+	margin:0 auto;
+	width:500px;
+}
+
+#birth{
+	text-decoration: none;
+	width: 100%;
+}
+
+#day,#month,#year{	
+	border: 1px solid #dddddd;
+}
+
+#img {
+	width: 24%;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	height: 100%
+}
+
+
+.title{
+	display: block;
+    float: left;
+    width: 135px;
+    clear: both;
+}

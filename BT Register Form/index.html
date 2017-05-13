@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Register Form</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<h2>Đăng ký tài khoản</h2>
+		<form action="result.html" id="form">
+		<input type="text" id="name" name="Name" placeholder="Họ tên"/><br/>
+			<p>Date of birth</p>
+				<div id="birth">
+					<select name="Day" id="day">
+						<option disabled selected hidden>Ngày</option>
+					</select>
+					<select name="Month" id="month">
+						<option disabled selected hidden>Tháng</option>
+					</select>
+					<select name="Year" id="year">
+						<option disabled selected hidden>Năm</option>
+					</select>
+				</div>
+			<p>Gender: 
+					<input type="radio" name="Gender" id="male" value="Nam" /><label for = "male"> Nam </label>
+					<input type="radio" name="Gender" id="female" value="Nữ" /> <label for="female"> Nữ </label></p>
+
+			<input type="text" id="address" name="Address" placeholder="Địa chỉ"/><span class="error"></span><br/><br/>
+
+			<input type="number" id="phone" name="Phone" placeholder="Số điện thoại"/><span class="error"></span><br/><br/>
+
+			<input type="email" id="email" name="Email" placeholder="Email" /><span class="error"></span><br/><br/>
+
+			<input type="password" id="password" name="Password" placeholder="Mật khẩu"/><span class="error"></span><br/><br/>
+
+			<input type="submit" value="Đăng ký"/>
+			</form>
+</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
