@@ -1,0 +1,29 @@
+.wrap {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center !important;
+}
+table {
+	margin: auto !important;
+}
+
+
+table, td, th {
+	border: 1px solid black !important;
+	font-size: 18px !important;
+}
+
+tbody tr:hover {
+	background-color: #eaebee !important;
+}
+
+table {
+	border-collapse: collapse;
+}
+td, th {
+	padding: 5px 20px !important;
+}
+
+img {
+	max-width: 50% !important;
+}
