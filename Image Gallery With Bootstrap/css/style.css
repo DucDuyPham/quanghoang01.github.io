@@ -1,0 +1,16 @@
+.wrap{
+	max-width: 1000px;
+	margin:0 auto;
+}
+.banner img{
+	max-width: 100%;
+}
+
+.row img{
+	max-width: 100%;
+	padding: 15px 0px;
+}
+
+.row img:hover{
+	opacity: 0.8;
+}
