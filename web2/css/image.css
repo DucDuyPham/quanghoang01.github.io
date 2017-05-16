@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.wrap{width:800px;
+.wrap{max-width:800px;
       margin: 0 auto;}
 
 .wrap>img{max-width: 100%;max-height: 300px;}  
@@ -18,10 +18,21 @@ a:visited{color:black;}
 
 .menu a{padding: 10px;}	  
 
-
-.sp img{float:left;
-		width:33%;
-		padding:10px;
+img{
+	max-width: 100%;
+}
+.col{float:left;
+		max-width:32.9%;
 		}
 
+.col.giua{margin:0px 5px;}
+.clear{
+	clear:both;
+}
+
 .sp img:hover{opacity: 0.8}		
+
+@media (max-width: 800px){
+	.col{max-width: 100%
+	}
+}
