@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kanban Board</title>
+    <link type="text/css" rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"">
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        
+            <h3 class="text-center">Kanban board</h3>
+        
+    </nav>
+</div>
+
+    <section class="container">
+    	<div class="row">
+    		<div class="col-md-4">
+    			<div class="card">
+    				<h5>TODO(4)</h5>
+                    <ul class="list-group list-group-flush sorted-list">
+                        <li class="list-group-item">Làm bài tập<i class="glyphicon glyphicon-trash"></i></li>
+                        <li class="list-group-item">Làm bài quiz<i class="glyphicon glyphicon-trash"></i></li>
+                        <li class="list-group-item">Tập code<i class="glyphicon glyphicon-trash"></i></li>
+                    </ul>
+    				<div class="action">
+    					<div class="input-field">
+                            <input type="text" placeholder="New job...">
+                            <button >Add</button>
+                        </div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="col-md-4">
+    			<div class="card">
+    				<h5>DOING(1)</h5>
+    				<ul class="list-group list-group-flush sorted-list">
+                        <li class="list-group-item">Làm clip<i class="glyphicon glyphicon-trash"></i></li>
+                    </ul>
+    				<div class="action">
+    					<div class="input-field">
+                            <input type="text" placeholder="New job...">
+                            <button >Add</button>
+                        </div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="col-md-4">
+    			<div class="card">
+    				<h5>DONE(2)</h5>
+    				<ul class="list-group list-group-flush sorted-list">
+                        <li class="list-group-item">Đọc sách<i class="glyphicon glyphicon-trash"></i></li>
+                        <li class="list-group-item">Đi chợ<i class="glyphicon glyphicon-trash"></i></li>
+                    </ul>
+    				<div class="action">
+    					<div class="input-field">
+    						<input type="text" placeholder="New job...">
+                            <button >Add</button>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    	</div>
+    </section> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/jqueryui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+       
+<script>
+  $( function() {
+    $( ".sorted-list").sortable({
+      connectWith: ".sorted-list"
+    });
+  } );
+  </script>
+</script>
+</body>
+</html>
+
+
+
+

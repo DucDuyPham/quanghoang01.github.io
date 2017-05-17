@@ -1,0 +1,33 @@
+h5 {
+    background: lightgrey;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: -8px;
+}
+.card{ 
+    border: 1px solid #777;
+}
+
+.card i{
+    float: right;
+}
+
+.card ul{
+    padding-bottom: 20px;
+}
+
+.input-field input{
+        width: 250px;
+}
+
+.input-field button{
+    float:right;
+}
+
+section.container {
+    margin-top: 20px;
+}
+
