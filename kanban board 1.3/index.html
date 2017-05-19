@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Kanban Board</title>
+        <link type="text/css" rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css"">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                
+                <h3 class="text-center">Kanban board</h3>
+                
+            </nav>
+        </div>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <h5>TODO(0)</h5>
+                        <ul class="list-group sorted-list collection" id="todo">
+                        </ul>
+                        <div class="action">
+                            <div class="input-field">
+                                <input type="text" placeholder="New job..." onkeydown="app.newJob(event, 'todo', this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h5 class="text-primary">DOING(0)</h5>
+                        <ul class="list-group sorted-list collection" id="doing">
+                        </ul>
+                        <div class="action">
+                            <div class="input-field">
+                                <input type="text" placeholder="New job..." onkeydown="app.newJob(event, 'doing', this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h5 class="text-success">DONE(0)</h5>
+                        <ul class="list-group sorted-list collection" id="done">
+                        </ul>
+                        <div class="action">
+                            <div class="input-field">
+                                <input type="text" placeholder="New job..." onkeydown="app.newJob(event, 'done', this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Confirm Delete</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure to delete this job?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Agree</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/jqueryui/jquery-ui.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
