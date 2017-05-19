@@ -47,7 +47,7 @@ var app={
 	var modal = $('#myModal');
 	$('#myModal').modal('show');
 	var item= $(span).parent();
-	$('#btn-delete').off('click');
+	$('.btn-success').off('click');
 	$('.btn-success').on('click', function(){
         var columnType = item.parent().attr('id');
         var itemPosition = $('#' + columnType + ' .collection-item').index(item);
