@@ -1,0 +1,58 @@
+*{
+    list-style-type: none;
+}
+h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: -8px;
+}
+.navbar-default{
+    background-color: #142d3a !important;
+    color:white;
+}
+.card{ 
+    border: 1px solid #777;
+    margin-bottom: 15px;
+}
+
+.card i{
+    float: right;
+}
+
+.card ul{
+    padding-bottom: 20px;
+}
+
+.input-field input{
+        width: 292px;
+}
+
+section.container {
+    margin-top: 20px;
+}
+
+.ui-state-highlight{
+    background-color: #fafafa; 
+    height: calc(1.5rem + 20px);
+}
+
+.card .collection-item.dragging {
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.badge{
+    cursor: pointer;
+}
+
+.modal-content{
+    text-align: center;
+    width:400px;
+    margin:0 auto;
+}
+
+
